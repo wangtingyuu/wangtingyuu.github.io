@@ -1,0 +1,87 @@
+/*  小于1200px使用980px, max-width:1200px 设备的最大宽度为1200px,小于1200px就使用下面样式  */
+@media screen and (max-width:1217px) {
+	.box{
+		width: 980px;
+	}
+	
+	/* 减少了导航菜单margin-left */
+	header nav > ul >li{
+		margin-left: 34px;
+	}
+	
+	.content .plist .pitem .pitemimg01,.content .plist .pitem .pitemimg02{
+		display: none;
+	}
+	
+	.content .plist .pitem .pitemimg03,.content .plist .pitem .pitemimg04{
+		margin-right: 0px;
+		margin-left: 60px;
+	}
+}
+
+/*  小于980px使用768 */
+@media screen and (max-width:997px) {
+	.box{
+		width: 768px;
+	}
+	
+	header nav{
+		width: 238px;	
+		padding-top:20px;
+	}
+	
+	header nav > ul >li{
+		margin-left:62px;
+		margin-top:10px;
+	}
+	
+	.content .plist .pitem .pitemimg03{
+		width: 320px;
+		margin-left: 0;
+	}
+	.content .plist .pitem .pitemimg04{
+		width: 430px;
+		margin-left: 18px;
+	}
+}
+
+/*  小于768px使用480 */
+@media screen and (max-width:785px) {
+	.box{
+		width: 100%;
+		max-width: 480px;
+	}
+	
+	header .logo{
+		width: 100%;
+		float: none;	
+	}
+	
+	header nav{
+		width: 100%;
+		padding-top:4px;
+	}
+	
+	header nav > ul >li{
+		margin-left: 12px;
+	}
+	
+	header .headRight .row2{
+		display: none;
+	}
+	
+	.content .plist .pitem .pitemimg03{
+		display: none;
+	}
+	.content .plist .pitem .pitemimg04{
+		width: 100%;
+	}
+	.content .plist .pitem img{
+		height: auto;
+	}
+	
+	footer .col3{
+		width: 100%;
+		float: none;
+	}
+}
